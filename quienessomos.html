@@ -15,8 +15,43 @@
 </head>
 
 <body>
-    <header>
-        <!-- place navbar here -->
+    <header style="background-color: #ceffd7;">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="logos/logo.gif" class="img-fluid" alt="" width="100"></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Inicio
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Selecciona Categoria</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Anfibios</a>
+                                <a class="dropdown-item" href="#">Aves</a>
+                                <a class="dropdown-item" href="#">Mamiferos</a>
+                                <a class="dropdown-item" href="#">Peces</a>
+                                <a class="dropdown-item" href="reptiles.html">Reptiles</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Registrate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-target="#modalId" data-bs-toggle="modal">Inicia sesion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
     </header>
     <main>
         <a name="top"></a>
@@ -105,7 +140,7 @@
 
         </div>
     </main>
-    <footer style="background-color: rgb(108, 117, 126);">
+    <footer style="background-color: rgb(108, 117, 126);" class="mt-5">
         <div class="container">
             <div>
                 <h2 class="text-center">CLM SKILLS WEB - 2021</h2>
@@ -133,17 +168,20 @@
                 <div class="justify-content-center align-items-center col-3">
                     <nav class="text-center text-white">
                         <ul>
-                            <li class="list-group-numbered"> Quienes somos </li>
-                            <li class="list-group-numbered"> Privacidad </li>
-                            <li class="list-group-numbered"> Contacto </li>
+                            <li class="list-group-numbered"><a href="quienessomos.html" class="text-decoration-none text-white">Quienes Somos</a>  </li>
+                            <li class="list-group-numbered"><a href="#" class="text-decoration-none text-white"> Privacidad</a> </li>
+                            <li class="list-group-numbered"><a href="#" class="text-decoration-none text-white">Contacto</a>  </li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-3 text-center"><button class="btn text-white" type="submit"
-                        style="background-color: rgb(39, 168, 68);">HOME</button></div>
-            </div>
+                <div class="col-3 text-center">
+                    <a class="btn text-white" type="submit"
+                    style="background-color: rgb(39, 168, 68);" href="index.html">HOME</a>
+                    </div>
+                </div>
+               
             <div>
-                <p class="text-center"> Catálogo de animales <i class="fa fa-copyright" aria-hidden="true"></i> SIDAM -
+                <p class="text-center mb-0"> Catálogo de animales <i class="fa fa-copyright" aria-hidden="true"></i> SIDAM -
                     SIDAW</p>
             </div>
         </div>
