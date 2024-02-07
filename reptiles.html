@@ -58,7 +58,7 @@
     
         </header>
         <main></main>
-        <footer style="background-color: rgb(108, 117, 126);" class="mt-5">
+        <footer style="background-color: rgb(108, 117, 126);" class="mt-5 position-fixed">
             <div class="container">
                 <div>
                     <h2 class="text-center">CLM SKILLS WEB - 2021</h2>
@@ -105,7 +105,7 @@
             </div>
     
         </footer>
-        <!-- Bootstrap JavaScript Libraries -->
+
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -119,35 +119,54 @@
         ></script>
     </body>
     <div
-    class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-    role="document"
+    class="modal fade"
+    id="modalId"
+    tabindex="-1"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    
+    role="dialog"
+    aria-labelledby="modalTitleId"
+    aria-hidden="true"
 >
-    <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title " id="modalTitleId">
-                INICIA SESION
-            </h5>
-            <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-            ></button>
+    <div
+        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+        role="document"
+    >
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title " id="modalTitleId">
+                    INICIA SESION
+                </h5>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Usuario</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Inicia Sesion</button>
+                  </form>
+            
         </div>
-        <div class="modal-body">
-            <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Usuario</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <button type="submit" class="btn btn-primary">Inicia Sesion</button>
-              </form>
-        
     </div>
 </div>
-</div>
+
+<!-- Optional: Place to the bottom of scripts -->
+<script>
+    const myModal = new bootstrap.Modal(
+        document.getElementById("modalId"),
+        options,
+    );
+</script>
 </html>
